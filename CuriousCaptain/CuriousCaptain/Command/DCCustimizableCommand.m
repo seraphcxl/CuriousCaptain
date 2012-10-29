@@ -10,4 +10,18 @@
 
 @implementation DCCustimizableCommand
 
+@synthesize userInfo = _userInfo;
+
+- (void)dealloc {
+    self.userInfo = nil;
+    
+    [super dealloc];
+}
+
+- (void)execute {
+}
+
+- (void)undo {
+}
+
 @end

@@ -10,6 +10,14 @@
 
 @implementation DCCommandSlider
 
+@synthesize command = _command;
+
+- (void)dealloc {
+    self.command = nil;
+    
+    [super dealloc];
+}
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];

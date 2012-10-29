@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DCCustimizableCommand.h"
 
 @interface DCCommandBarButton : UIBarButtonItem
+
+@property (nonatomic, retain) IBOutlet DCCustimizableCommand *command;
 
 @end

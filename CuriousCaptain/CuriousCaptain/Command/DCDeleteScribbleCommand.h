@@ -10,4 +10,6 @@
 
 @interface DCDeleteScribbleCommand : DCCustimizableCommand
 
+- (void)execute;
+
 @end

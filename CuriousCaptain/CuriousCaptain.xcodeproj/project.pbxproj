@@ -19,6 +19,14 @@
 		1B496C88163E1C0200A4FB80 /* DCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B496C87163E1C0200A4FB80 /* DCViewController.m */; };
 		1B496C8B163E1C0200A4FB80 /* DCViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B496C89163E1C0200A4FB80 /* DCViewController_iPhone.xib */; };
 		1B496C8E163E1C0200A4FB80 /* DCViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B496C8C163E1C0200A4FB80 /* DCViewController_iPad.xib */; };
+		1B496CA4163E521100A4FB80 /* DCCustimizableCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B496CA3163E521100A4FB80 /* DCCustimizableCommand.m */; };
+		1B496CA7163E534B00A4FB80 /* DCSaveScribbleCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B496CA6163E534B00A4FB80 /* DCSaveScribbleCommand.m */; };
+		1B496CAA163E570F00A4FB80 /* DCDeleteScribbleCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B496CA9163E570F00A4FB80 /* DCDeleteScribbleCommand.m */; };
+		1B496CAD163E594900A4FB80 /* DCOpenScribbleCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B496CAC163E594900A4FB80 /* DCOpenScribbleCommand.m */; };
+		1B496CBB163E64AE00A4FB80 /* DCSetStrokeSizeCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B496CBA163E64AE00A4FB80 /* DCSetStrokeSizeCommand.m */; };
+		1B496CBE163E707600A4FB80 /* DCSetStrokeColorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B496CBD163E707500A4FB80 /* DCSetStrokeColorCommand.m */; };
+		1B496CC2163E797700A4FB80 /* DCCommandBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B496CC1163E797700A4FB80 /* DCCommandBarButton.m */; };
+		1B496CC5163E821900A4FB80 /* DCCommandSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B496CC4163E821900A4FB80 /* DCCommandSlider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +47,22 @@
 		1B496C87163E1C0200A4FB80 /* DCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCViewController.m; sourceTree = "<group>"; };
 		1B496C8A163E1C0200A4FB80 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DCViewController_iPhone.xib; sourceTree = "<group>"; };
 		1B496C8D163E1C0200A4FB80 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DCViewController_iPad.xib; sourceTree = "<group>"; };
+		1B496CA2163E521100A4FB80 /* DCCustimizableCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCCustimizableCommand.h; path = Command/DCCustimizableCommand.h; sourceTree = "<group>"; };
+		1B496CA3163E521100A4FB80 /* DCCustimizableCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCCustimizableCommand.m; path = Command/DCCustimizableCommand.m; sourceTree = "<group>"; };
+		1B496CA5163E534B00A4FB80 /* DCSaveScribbleCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCSaveScribbleCommand.h; path = Command/DCSaveScribbleCommand.h; sourceTree = "<group>"; };
+		1B496CA6163E534B00A4FB80 /* DCSaveScribbleCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCSaveScribbleCommand.m; path = Command/DCSaveScribbleCommand.m; sourceTree = "<group>"; };
+		1B496CA8163E570F00A4FB80 /* DCDeleteScribbleCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCDeleteScribbleCommand.h; path = Command/DCDeleteScribbleCommand.h; sourceTree = "<group>"; };
+		1B496CA9163E570F00A4FB80 /* DCDeleteScribbleCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCDeleteScribbleCommand.m; path = Command/DCDeleteScribbleCommand.m; sourceTree = "<group>"; };
+		1B496CAB163E594900A4FB80 /* DCOpenScribbleCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCOpenScribbleCommand.h; path = Command/DCOpenScribbleCommand.h; sourceTree = "<group>"; };
+		1B496CAC163E594900A4FB80 /* DCOpenScribbleCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCOpenScribbleCommand.m; path = Command/DCOpenScribbleCommand.m; sourceTree = "<group>"; };
+		1B496CB9163E64AD00A4FB80 /* DCSetStrokeSizeCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCSetStrokeSizeCommand.h; path = Command/DCSetStrokeSizeCommand.h; sourceTree = "<group>"; };
+		1B496CBA163E64AE00A4FB80 /* DCSetStrokeSizeCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCSetStrokeSizeCommand.m; path = Command/DCSetStrokeSizeCommand.m; sourceTree = "<group>"; };
+		1B496CBC163E707500A4FB80 /* DCSetStrokeColorCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCSetStrokeColorCommand.h; path = Command/DCSetStrokeColorCommand.h; sourceTree = "<group>"; };
+		1B496CBD163E707500A4FB80 /* DCSetStrokeColorCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCSetStrokeColorCommand.m; path = Command/DCSetStrokeColorCommand.m; sourceTree = "<group>"; };
+		1B496CC0163E797700A4FB80 /* DCCommandBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCCommandBarButton.h; path = Utility/DCCommandBarButton.h; sourceTree = "<group>"; };
+		1B496CC1163E797700A4FB80 /* DCCommandBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCCommandBarButton.m; path = Utility/DCCommandBarButton.m; sourceTree = "<group>"; };
+		1B496CC3163E821900A4FB80 /* DCCommandSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCCommandSlider.h; path = Utility/DCCommandSlider.h; sourceTree = "<group>"; };
+		1B496CC4163E821900A4FB80 /* DCCommandSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCCommandSlider.m; path = Utility/DCCommandSlider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +109,9 @@
 		1B496C74163E1C0200A4FB80 /* CuriousCaptain */ = {
 			isa = PBXGroup;
 			children = (
+				1B496CBF163E795300A4FB80 /* Utility */,
+				1B496CAF163E5D2500A4FB80 /* Scribble */,
+				1B496CA0163E519E00A4FB80 /* Command */,
 				1B496C7D163E1C0200A4FB80 /* DCAppDelegate.h */,
 				1B496C7E163E1C0200A4FB80 /* DCAppDelegate.m */,
 				1B496C86163E1C0200A4FB80 /* DCViewController.h */,
@@ -108,6 +135,43 @@
 				1B496C84163E1C0200A4FB80 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1B496CA0163E519E00A4FB80 /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				1B496CA2163E521100A4FB80 /* DCCustimizableCommand.h */,
+				1B496CA3163E521100A4FB80 /* DCCustimizableCommand.m */,
+				1B496CA5163E534B00A4FB80 /* DCSaveScribbleCommand.h */,
+				1B496CA6163E534B00A4FB80 /* DCSaveScribbleCommand.m */,
+				1B496CA8163E570F00A4FB80 /* DCDeleteScribbleCommand.h */,
+				1B496CA9163E570F00A4FB80 /* DCDeleteScribbleCommand.m */,
+				1B496CAB163E594900A4FB80 /* DCOpenScribbleCommand.h */,
+				1B496CAC163E594900A4FB80 /* DCOpenScribbleCommand.m */,
+				1B496CB9163E64AD00A4FB80 /* DCSetStrokeSizeCommand.h */,
+				1B496CBA163E64AE00A4FB80 /* DCSetStrokeSizeCommand.m */,
+				1B496CBC163E707500A4FB80 /* DCSetStrokeColorCommand.h */,
+				1B496CBD163E707500A4FB80 /* DCSetStrokeColorCommand.m */,
+			);
+			name = Command;
+			sourceTree = "<group>";
+		};
+		1B496CAF163E5D2500A4FB80 /* Scribble */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Scribble;
+			sourceTree = "<group>";
+		};
+		1B496CBF163E795300A4FB80 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				1B496CC0163E797700A4FB80 /* DCCommandBarButton.h */,
+				1B496CC1163E797700A4FB80 /* DCCommandBarButton.m */,
+				1B496CC3163E821900A4FB80 /* DCCommandSlider.h */,
+				1B496CC4163E821900A4FB80 /* DCCommandSlider.m */,
+			);
+			name = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +245,14 @@
 				1B496C7B163E1C0200A4FB80 /* main.m in Sources */,
 				1B496C7F163E1C0200A4FB80 /* DCAppDelegate.m in Sources */,
 				1B496C88163E1C0200A4FB80 /* DCViewController.m in Sources */,
+				1B496CA4163E521100A4FB80 /* DCCustimizableCommand.m in Sources */,
+				1B496CA7163E534B00A4FB80 /* DCSaveScribbleCommand.m in Sources */,
+				1B496CAA163E570F00A4FB80 /* DCDeleteScribbleCommand.m in Sources */,
+				1B496CAD163E594900A4FB80 /* DCOpenScribbleCommand.m in Sources */,
+				1B496CBB163E64AE00A4FB80 /* DCSetStrokeSizeCommand.m in Sources */,
+				1B496CBE163E707600A4FB80 /* DCSetStrokeColorCommand.m in Sources */,
+				1B496CC2163E797700A4FB80 /* DCCommandBarButton.m in Sources */,
+				1B496CC5163E821900A4FB80 /* DCCommandSlider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +377,7 @@
 				1B496C93163E1C0200A4FB80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

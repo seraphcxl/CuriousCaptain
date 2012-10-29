@@ -10,4 +10,24 @@
 
 @implementation DCSetStrokeSizeCommand
 
+@synthesize delegate =_delegate;
+
+- (void)dealloc {
+    self.delegate = nil;
+    
+    [super dealloc];
+}
+
+- (void)execute {
+    do {
+        CGFloat strokeSize = 1;
+        [self.delegate command:self didRequestForStrokeSize:&strokeSize];
+        
+        CoordinatingController *coordinator = [CoordinatingController sharedInstance];
+        CanvasViewController *controller = [coordinator canvasViewController];
+        
+        [controller setStrokeSize:strokeSize];
+    } while (NO);
+}
+
 @end

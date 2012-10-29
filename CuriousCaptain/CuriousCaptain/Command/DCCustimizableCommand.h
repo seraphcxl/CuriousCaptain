@@ -10,4 +10,9 @@
 
 @interface DCCustimizableCommand : NSObject
 
+@property (nonatomic, retain) NSDictionary *userInfo;
+
+- (void)execute;
+- (void)undo;
+
 @end

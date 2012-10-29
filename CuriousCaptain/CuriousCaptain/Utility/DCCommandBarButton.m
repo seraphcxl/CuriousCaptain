@@ -10,4 +10,12 @@
 
 @implementation DCCommandBarButton
 
+@synthesize command = _command;
+
+- (void)dealloc {
+    self.command = nil;
+    
+    [super dealloc];
+}
+
 @end

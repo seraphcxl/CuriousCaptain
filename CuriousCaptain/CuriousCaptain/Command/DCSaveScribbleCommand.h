@@ -10,4 +10,6 @@
 
 @interface DCSaveScribbleCommand : DCCustimizableCommand
 
+- (void)execute;
+
 @end

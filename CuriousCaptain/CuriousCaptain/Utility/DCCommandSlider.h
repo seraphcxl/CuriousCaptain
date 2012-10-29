@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DCCustimizableCommand.h"
 
 @interface DCCommandSlider : UISlider
+
+@property (nonatomic, retain) IBOutlet DCCustimizableCommand *command;
 
 @end

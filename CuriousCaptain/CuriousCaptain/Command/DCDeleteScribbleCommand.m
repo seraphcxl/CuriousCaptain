@@ -10,4 +10,14 @@
 
 @implementation DCDeleteScribbleCommand
 
+- (void)execute {
+    do {
+        CoordinatingController *coordinatingController = [CoordinatingController sharedInstance];
+        CanvasViewController *canvasViewController = [coordinatingController canvasViewController];
+        
+        Scribble *newScribble = [[[Scribble alloc] init] autorelease];
+        [canvasViewController setScribble:newScribble];
+    } while (NO);
+}
+
 @end

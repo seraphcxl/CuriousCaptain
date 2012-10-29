@@ -8,6 +8,18 @@
 
 #import "DCCustimizableCommand.h"
 
+@class DCSetStrokeSizeCommand;
+
+@protocol DCSetStrokeSizeCommandDelegate
+
+- (void)command:(DCSetStrokeSizeCommand *)command didRequestForStrokeSize:(CGFloat *)size;
+
+@end
+
 @interface DCSetStrokeSizeCommand : DCCustimizableCommand
+
+@property (nonatomic, assign) id<DCSetStrokeSizeCommandDelegate> delegate;
+
+- (void)execute;
 
 @end

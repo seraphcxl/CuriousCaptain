@@ -10,4 +10,9 @@
 
 @interface DCOpenScribbleCommand : DCCustimizableCommand
 
+@property (nonatomic, retain) id <ScribbleSource> scribbleSource;
+
+- (id)initWithScribbleSource:(id <ScribbleSource>) aScribbleSource;
+- (void)execute;
+
 @end
