@@ -27,6 +27,12 @@
 		1B496CBE163E707600A4FB80 /* DCSetStrokeColorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B496CBD163E707500A4FB80 /* DCSetStrokeColorCommand.m */; };
 		1B496CC2163E797700A4FB80 /* DCCommandBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B496CC1163E797700A4FB80 /* DCCommandBarButton.m */; };
 		1B496CC5163E821900A4FB80 /* DCCommandSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B496CC4163E821900A4FB80 /* DCCommandSlider.m */; };
+		1BE25498163F676800F6D002 /* NSMutableArray+Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE25497163F676800F6D002 /* NSMutableArray+Stack.m */; };
+		1BE2549C163F6AC100F6D002 /* UIView+UIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE2549B163F6AC100F6D002 /* UIView+UIImage.m */; };
+		1BE2549E163F6C0B00F6D002 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE2549D163F6C0B00F6D002 /* QuartzCore.framework */; };
+		1BE254A4163F7A5B00F6D002 /* DCCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE254A3163F7A5B00F6D002 /* DCCanvasViewGenerator.m */; };
+		1BE254A7163F7A8600F6D002 /* DCPaperCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE254A6163F7A8600F6D002 /* DCPaperCanvasViewGenerator.m */; };
+		1BE254AA163F7A9800F6D002 /* DCClothCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE254A9163F7A9700F6D002 /* DCClothCanvasViewGenerator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +69,17 @@
 		1B496CC1163E797700A4FB80 /* DCCommandBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCCommandBarButton.m; path = Utility/DCCommandBarButton.m; sourceTree = "<group>"; };
 		1B496CC3163E821900A4FB80 /* DCCommandSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCCommandSlider.h; path = Utility/DCCommandSlider.h; sourceTree = "<group>"; };
 		1B496CC4163E821900A4FB80 /* DCCommandSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCCommandSlider.m; path = Utility/DCCommandSlider.m; sourceTree = "<group>"; };
+		1BE25496163F676800F6D002 /* NSMutableArray+Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+Stack.h"; path = "Utility/NSMutableArray+Stack.h"; sourceTree = "<group>"; };
+		1BE25497163F676800F6D002 /* NSMutableArray+Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+Stack.m"; path = "Utility/NSMutableArray+Stack.m"; sourceTree = "<group>"; };
+		1BE2549A163F6AC100F6D002 /* UIView+UIImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+UIImage.h"; path = "Utility/UIView+UIImage.h"; sourceTree = "<group>"; };
+		1BE2549B163F6AC100F6D002 /* UIView+UIImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+UIImage.m"; path = "Utility/UIView+UIImage.m"; sourceTree = "<group>"; };
+		1BE2549D163F6C0B00F6D002 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1BE254A2163F7A5B00F6D002 /* DCCanvasViewGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCanvasViewGenerator.h; sourceTree = "<group>"; };
+		1BE254A3163F7A5B00F6D002 /* DCCanvasViewGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCanvasViewGenerator.m; sourceTree = "<group>"; };
+		1BE254A5163F7A8600F6D002 /* DCPaperCanvasViewGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPaperCanvasViewGenerator.h; sourceTree = "<group>"; };
+		1BE254A6163F7A8600F6D002 /* DCPaperCanvasViewGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPaperCanvasViewGenerator.m; sourceTree = "<group>"; };
+		1BE254A8163F7A9700F6D002 /* DCClothCanvasViewGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCClothCanvasViewGenerator.h; sourceTree = "<group>"; };
+		1BE254A9163F7A9700F6D002 /* DCClothCanvasViewGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCClothCanvasViewGenerator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BE2549E163F6C0B00F6D002 /* QuartzCore.framework in Frameworks */,
 				1B496C6F163E1C0200A4FB80 /* UIKit.framework in Frameworks */,
 				1B496C71163E1C0200A4FB80 /* Foundation.framework in Frameworks */,
 				1B496C73163E1C0200A4FB80 /* CoreGraphics.framework in Frameworks */,
@@ -99,6 +117,7 @@
 		1B496C6D163E1C0200A4FB80 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1BE2549D163F6C0B00F6D002 /* QuartzCore.framework */,
 				1B496C6E163E1C0200A4FB80 /* UIKit.framework */,
 				1B496C70163E1C0200A4FB80 /* Foundation.framework */,
 				1B496C72163E1C0200A4FB80 /* CoreGraphics.framework */,
@@ -109,16 +128,22 @@
 		1B496C74163E1C0200A4FB80 /* CuriousCaptain */ = {
 			isa = PBXGroup;
 			children = (
+				1B496C75163E1C0200A4FB80 /* Supporting Files */,
 				1B496CBF163E795300A4FB80 /* Utility */,
-				1B496CAF163E5D2500A4FB80 /* Scribble */,
 				1B496CA0163E519E00A4FB80 /* Command */,
+				1B496CAF163E5D2500A4FB80 /* Scribble */,
 				1B496C7D163E1C0200A4FB80 /* DCAppDelegate.h */,
 				1B496C7E163E1C0200A4FB80 /* DCAppDelegate.m */,
 				1B496C86163E1C0200A4FB80 /* DCViewController.h */,
 				1B496C87163E1C0200A4FB80 /* DCViewController.m */,
 				1B496C89163E1C0200A4FB80 /* DCViewController_iPhone.xib */,
 				1B496C8C163E1C0200A4FB80 /* DCViewController_iPad.xib */,
-				1B496C75163E1C0200A4FB80 /* Supporting Files */,
+				1BE254A2163F7A5B00F6D002 /* DCCanvasViewGenerator.h */,
+				1BE254A3163F7A5B00F6D002 /* DCCanvasViewGenerator.m */,
+				1BE254A5163F7A8600F6D002 /* DCPaperCanvasViewGenerator.h */,
+				1BE254A6163F7A8600F6D002 /* DCPaperCanvasViewGenerator.m */,
+				1BE254A8163F7A9700F6D002 /* DCClothCanvasViewGenerator.h */,
+				1BE254A9163F7A9700F6D002 /* DCClothCanvasViewGenerator.m */,
 			);
 			path = CuriousCaptain;
 			sourceTree = "<group>";
@@ -170,6 +195,10 @@
 				1B496CC1163E797700A4FB80 /* DCCommandBarButton.m */,
 				1B496CC3163E821900A4FB80 /* DCCommandSlider.h */,
 				1B496CC4163E821900A4FB80 /* DCCommandSlider.m */,
+				1BE25496163F676800F6D002 /* NSMutableArray+Stack.h */,
+				1BE25497163F676800F6D002 /* NSMutableArray+Stack.m */,
+				1BE2549A163F6AC100F6D002 /* UIView+UIImage.h */,
+				1BE2549B163F6AC100F6D002 /* UIView+UIImage.m */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -253,6 +282,11 @@
 				1B496CBE163E707600A4FB80 /* DCSetStrokeColorCommand.m in Sources */,
 				1B496CC2163E797700A4FB80 /* DCCommandBarButton.m in Sources */,
 				1B496CC5163E821900A4FB80 /* DCCommandSlider.m in Sources */,
+				1BE25498163F676800F6D002 /* NSMutableArray+Stack.m in Sources */,
+				1BE2549C163F6AC100F6D002 /* UIView+UIImage.m in Sources */,
+				1BE254A4163F7A5B00F6D002 /* DCCanvasViewGenerator.m in Sources */,
+				1BE254A7163F7A8600F6D002 /* DCPaperCanvasViewGenerator.m in Sources */,
+				1BE254AA163F7A9800F6D002 /* DCClothCanvasViewGenerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
