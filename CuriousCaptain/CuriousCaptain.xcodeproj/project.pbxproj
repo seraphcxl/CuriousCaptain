@@ -30,9 +30,6 @@
 		1BE25498163F676800F6D002 /* NSMutableArray+Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE25497163F676800F6D002 /* NSMutableArray+Stack.m */; };
 		1BE2549C163F6AC100F6D002 /* UIView+UIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE2549B163F6AC100F6D002 /* UIView+UIImage.m */; };
 		1BE2549E163F6C0B00F6D002 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE2549D163F6C0B00F6D002 /* QuartzCore.framework */; };
-		1BE254A4163F7A5B00F6D002 /* DCCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE254A3163F7A5B00F6D002 /* DCCanvasViewGenerator.m */; };
-		1BE254A7163F7A8600F6D002 /* DCPaperCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE254A6163F7A8600F6D002 /* DCPaperCanvasViewGenerator.m */; };
-		1BE254AA163F7A9800F6D002 /* DCClothCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE254A9163F7A9700F6D002 /* DCClothCanvasViewGenerator.m */; };
 		1BE254CA163F81B500F6D002 /* DCCoordinatingCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE254C9163F81B400F6D002 /* DCCoordinatingCtrl.m */; };
 		1BE2550D163FA08300F6D002 /* DCDot.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE254F1163FA08300F6D002 /* DCDot.m */; };
 		1BE2550E163FA08300F6D002 /* DCMarkEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE254F4163FA08300F6D002 /* DCMarkEnumerator.m */; };
@@ -47,9 +44,6 @@
 		1BE25517163FA08300F6D002 /* DCScribbleThumbnailViewImageProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE25508163FA08300F6D002 /* DCScribbleThumbnailViewImageProxy.m */; };
 		1BE25518163FA08300F6D002 /* DCStroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE2550A163FA08300F6D002 /* DCStroke.m */; };
 		1BE25519163FA08300F6D002 /* DCVertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE2550C163FA08300F6D002 /* DCVertex.m */; };
-		1BE2551C163FA0B200F6D002 /* DCCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE2551B163FA0B200F6D002 /* DCCanvasView.m */; };
-		1BE2551F163FA0CB00F6D002 /* DCClothCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE2551E163FA0CB00F6D002 /* DCClothCanvasView.m */; };
-		1BE25522163FA1F700F6D002 /* DCPaperCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE25521163FA1F600F6D002 /* DCPaperCanvasView.m */; };
 		1BE2552E163FA63500F6D002 /* DCCanvasViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE2552C163FA63500F6D002 /* DCCanvasViewCtrl.m */; };
 		1BE2552F163FA63500F6D002 /* DCCanvasViewCtrl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BE2552D163FA63500F6D002 /* DCCanvasViewCtrl.xib */; };
 		1BE25533163FA65A00F6D002 /* DCThumbnailViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE25531163FA65A00F6D002 /* DCThumbnailViewCtrl.m */; };
@@ -57,6 +51,12 @@
 		1BE25537163FA67600F6D002 /* DCScribbleThumbnailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE25536163FA67600F6D002 /* DCScribbleThumbnailCell.m */; };
 		1BE2553B163FA69A00F6D002 /* DCPaletteViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE25539163FA69A00F6D002 /* DCPaletteViewCtrl.m */; };
 		1BE2553C163FA69A00F6D002 /* DCPaletteViewCtrl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BE2553A163FA69A00F6D002 /* DCPaletteViewCtrl.xib */; };
+		1BE2554A163FA8AB00F6D002 /* DCCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE2553F163FA8AB00F6D002 /* DCCanvasView.m */; };
+		1BE2554B163FA8AB00F6D002 /* DCCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE25541163FA8AB00F6D002 /* DCCanvasViewGenerator.m */; };
+		1BE2554C163FA8AB00F6D002 /* DCClothCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE25543163FA8AB00F6D002 /* DCClothCanvasView.m */; };
+		1BE2554D163FA8AB00F6D002 /* DCClothCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE25545163FA8AB00F6D002 /* DCClothCanvasViewGenerator.m */; };
+		1BE2554E163FA8AB00F6D002 /* DCPaperCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE25547163FA8AB00F6D002 /* DCPaperCanvasView.m */; };
+		1BE2554F163FA8AB00F6D002 /* DCPaperCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE25549163FA8AB00F6D002 /* DCPaperCanvasViewGenerator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,12 +98,6 @@
 		1BE2549A163F6AC100F6D002 /* UIView+UIImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+UIImage.h"; path = "Utility/UIView+UIImage.h"; sourceTree = "<group>"; };
 		1BE2549B163F6AC100F6D002 /* UIView+UIImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+UIImage.m"; path = "Utility/UIView+UIImage.m"; sourceTree = "<group>"; };
 		1BE2549D163F6C0B00F6D002 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		1BE254A2163F7A5B00F6D002 /* DCCanvasViewGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCanvasViewGenerator.h; sourceTree = "<group>"; };
-		1BE254A3163F7A5B00F6D002 /* DCCanvasViewGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCanvasViewGenerator.m; sourceTree = "<group>"; };
-		1BE254A5163F7A8600F6D002 /* DCPaperCanvasViewGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPaperCanvasViewGenerator.h; sourceTree = "<group>"; };
-		1BE254A6163F7A8600F6D002 /* DCPaperCanvasViewGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPaperCanvasViewGenerator.m; sourceTree = "<group>"; };
-		1BE254A8163F7A9700F6D002 /* DCClothCanvasViewGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCClothCanvasViewGenerator.h; sourceTree = "<group>"; };
-		1BE254A9163F7A9700F6D002 /* DCClothCanvasViewGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCClothCanvasViewGenerator.m; sourceTree = "<group>"; };
 		1BE254C8163F81B300F6D002 /* DCCoordinatingCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCoordinatingCtrl.h; sourceTree = "<group>"; };
 		1BE254C9163F81B400F6D002 /* DCCoordinatingCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCoordinatingCtrl.m; sourceTree = "<group>"; };
 		1BE254F0163FA08300F6D002 /* DCDot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCDot.h; path = Scribble/DCDot.h; sourceTree = "<group>"; };
@@ -135,12 +129,6 @@
 		1BE2550A163FA08300F6D002 /* DCStroke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCStroke.m; path = Scribble/DCStroke.m; sourceTree = "<group>"; };
 		1BE2550B163FA08300F6D002 /* DCVertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCVertex.h; path = Scribble/DCVertex.h; sourceTree = "<group>"; };
 		1BE2550C163FA08300F6D002 /* DCVertex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCVertex.m; path = Scribble/DCVertex.m; sourceTree = "<group>"; };
-		1BE2551A163FA0B100F6D002 /* DCCanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCanvasView.h; sourceTree = "<group>"; };
-		1BE2551B163FA0B200F6D002 /* DCCanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCanvasView.m; sourceTree = "<group>"; };
-		1BE2551D163FA0CB00F6D002 /* DCClothCanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCClothCanvasView.h; sourceTree = "<group>"; };
-		1BE2551E163FA0CB00F6D002 /* DCClothCanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCClothCanvasView.m; sourceTree = "<group>"; };
-		1BE25520163FA1F600F6D002 /* DCPaperCanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPaperCanvasView.h; sourceTree = "<group>"; };
-		1BE25521163FA1F600F6D002 /* DCPaperCanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPaperCanvasView.m; sourceTree = "<group>"; };
 		1BE2552B163FA63500F6D002 /* DCCanvasViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCCanvasViewCtrl.h; path = CanvasViewCtrl/DCCanvasViewCtrl.h; sourceTree = "<group>"; };
 		1BE2552C163FA63500F6D002 /* DCCanvasViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCCanvasViewCtrl.m; path = CanvasViewCtrl/DCCanvasViewCtrl.m; sourceTree = "<group>"; };
 		1BE2552D163FA63500F6D002 /* DCCanvasViewCtrl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DCCanvasViewCtrl.xib; path = CanvasViewCtrl/DCCanvasViewCtrl.xib; sourceTree = "<group>"; };
@@ -152,6 +140,18 @@
 		1BE25538163FA69A00F6D002 /* DCPaletteViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCPaletteViewCtrl.h; path = PaletteViewCtrl/DCPaletteViewCtrl.h; sourceTree = "<group>"; };
 		1BE25539163FA69A00F6D002 /* DCPaletteViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCPaletteViewCtrl.m; path = PaletteViewCtrl/DCPaletteViewCtrl.m; sourceTree = "<group>"; };
 		1BE2553A163FA69A00F6D002 /* DCPaletteViewCtrl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DCPaletteViewCtrl.xib; path = PaletteViewCtrl/DCPaletteViewCtrl.xib; sourceTree = "<group>"; };
+		1BE2553E163FA8AB00F6D002 /* DCCanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCCanvasView.h; path = CanvasView/DCCanvasView.h; sourceTree = "<group>"; };
+		1BE2553F163FA8AB00F6D002 /* DCCanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCCanvasView.m; path = CanvasView/DCCanvasView.m; sourceTree = "<group>"; };
+		1BE25540163FA8AB00F6D002 /* DCCanvasViewGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCCanvasViewGenerator.h; path = CanvasView/DCCanvasViewGenerator.h; sourceTree = "<group>"; };
+		1BE25541163FA8AB00F6D002 /* DCCanvasViewGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCCanvasViewGenerator.m; path = CanvasView/DCCanvasViewGenerator.m; sourceTree = "<group>"; };
+		1BE25542163FA8AB00F6D002 /* DCClothCanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCClothCanvasView.h; path = CanvasView/DCClothCanvasView.h; sourceTree = "<group>"; };
+		1BE25543163FA8AB00F6D002 /* DCClothCanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCClothCanvasView.m; path = CanvasView/DCClothCanvasView.m; sourceTree = "<group>"; };
+		1BE25544163FA8AB00F6D002 /* DCClothCanvasViewGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCClothCanvasViewGenerator.h; path = CanvasView/DCClothCanvasViewGenerator.h; sourceTree = "<group>"; };
+		1BE25545163FA8AB00F6D002 /* DCClothCanvasViewGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCClothCanvasViewGenerator.m; path = CanvasView/DCClothCanvasViewGenerator.m; sourceTree = "<group>"; };
+		1BE25546163FA8AB00F6D002 /* DCPaperCanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCPaperCanvasView.h; path = CanvasView/DCPaperCanvasView.h; sourceTree = "<group>"; };
+		1BE25547163FA8AB00F6D002 /* DCPaperCanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCPaperCanvasView.m; path = CanvasView/DCPaperCanvasView.m; sourceTree = "<group>"; };
+		1BE25548163FA8AB00F6D002 /* DCPaperCanvasViewGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCPaperCanvasViewGenerator.h; path = CanvasView/DCPaperCanvasViewGenerator.h; sourceTree = "<group>"; };
+		1BE25549163FA8AB00F6D002 /* DCPaperCanvasViewGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCPaperCanvasViewGenerator.m; path = CanvasView/DCPaperCanvasViewGenerator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +200,7 @@
 		1B496C74163E1C0200A4FB80 /* CuriousCaptain */ = {
 			isa = PBXGroup;
 			children = (
+				1BE2553D163FA89900F6D002 /* CanvasView */,
 				1BE25525163FA5DE00F6D002 /* PaletteViewCtrl */,
 				1BE25524163FA5CA00F6D002 /* ThumbnailViewCtrl */,
 				1BE25523163FA5BA00F6D002 /* CanvasViewCtrl */,
@@ -215,18 +216,6 @@
 				1B496C8C163E1C0200A4FB80 /* DCViewController_iPad.xib */,
 				1BE254C8163F81B300F6D002 /* DCCoordinatingCtrl.h */,
 				1BE254C9163F81B400F6D002 /* DCCoordinatingCtrl.m */,
-				1BE254A2163F7A5B00F6D002 /* DCCanvasViewGenerator.h */,
-				1BE254A3163F7A5B00F6D002 /* DCCanvasViewGenerator.m */,
-				1BE254A5163F7A8600F6D002 /* DCPaperCanvasViewGenerator.h */,
-				1BE254A6163F7A8600F6D002 /* DCPaperCanvasViewGenerator.m */,
-				1BE254A8163F7A9700F6D002 /* DCClothCanvasViewGenerator.h */,
-				1BE254A9163F7A9700F6D002 /* DCClothCanvasViewGenerator.m */,
-				1BE2551A163FA0B100F6D002 /* DCCanvasView.h */,
-				1BE2551B163FA0B200F6D002 /* DCCanvasView.m */,
-				1BE2551D163FA0CB00F6D002 /* DCClothCanvasView.h */,
-				1BE2551E163FA0CB00F6D002 /* DCClothCanvasView.m */,
-				1BE25520163FA1F600F6D002 /* DCPaperCanvasView.h */,
-				1BE25521163FA1F600F6D002 /* DCPaperCanvasView.m */,
 			);
 			path = CuriousCaptain;
 			sourceTree = "<group>";
@@ -347,6 +336,25 @@
 			name = PaletteViewCtrl;
 			sourceTree = "<group>";
 		};
+		1BE2553D163FA89900F6D002 /* CanvasView */ = {
+			isa = PBXGroup;
+			children = (
+				1BE2553E163FA8AB00F6D002 /* DCCanvasView.h */,
+				1BE2553F163FA8AB00F6D002 /* DCCanvasView.m */,
+				1BE25540163FA8AB00F6D002 /* DCCanvasViewGenerator.h */,
+				1BE25541163FA8AB00F6D002 /* DCCanvasViewGenerator.m */,
+				1BE25542163FA8AB00F6D002 /* DCClothCanvasView.h */,
+				1BE25543163FA8AB00F6D002 /* DCClothCanvasView.m */,
+				1BE25544163FA8AB00F6D002 /* DCClothCanvasViewGenerator.h */,
+				1BE25545163FA8AB00F6D002 /* DCClothCanvasViewGenerator.m */,
+				1BE25546163FA8AB00F6D002 /* DCPaperCanvasView.h */,
+				1BE25547163FA8AB00F6D002 /* DCPaperCanvasView.m */,
+				1BE25548163FA8AB00F6D002 /* DCPaperCanvasViewGenerator.h */,
+				1BE25549163FA8AB00F6D002 /* DCPaperCanvasViewGenerator.m */,
+			);
+			name = CanvasView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -431,9 +439,6 @@
 				1B496CC5163E821900A4FB80 /* DCCommandSlider.m in Sources */,
 				1BE25498163F676800F6D002 /* NSMutableArray+Stack.m in Sources */,
 				1BE2549C163F6AC100F6D002 /* UIView+UIImage.m in Sources */,
-				1BE254A4163F7A5B00F6D002 /* DCCanvasViewGenerator.m in Sources */,
-				1BE254A7163F7A8600F6D002 /* DCPaperCanvasViewGenerator.m in Sources */,
-				1BE254AA163F7A9800F6D002 /* DCClothCanvasViewGenerator.m in Sources */,
 				1BE254CA163F81B500F6D002 /* DCCoordinatingCtrl.m in Sources */,
 				1BE2550D163FA08300F6D002 /* DCDot.m in Sources */,
 				1BE2550E163FA08300F6D002 /* DCMarkEnumerator.m in Sources */,
@@ -448,13 +453,16 @@
 				1BE25517163FA08300F6D002 /* DCScribbleThumbnailViewImageProxy.m in Sources */,
 				1BE25518163FA08300F6D002 /* DCStroke.m in Sources */,
 				1BE25519163FA08300F6D002 /* DCVertex.m in Sources */,
-				1BE2551C163FA0B200F6D002 /* DCCanvasView.m in Sources */,
-				1BE2551F163FA0CB00F6D002 /* DCClothCanvasView.m in Sources */,
-				1BE25522163FA1F700F6D002 /* DCPaperCanvasView.m in Sources */,
 				1BE2552E163FA63500F6D002 /* DCCanvasViewCtrl.m in Sources */,
 				1BE25533163FA65A00F6D002 /* DCThumbnailViewCtrl.m in Sources */,
 				1BE25537163FA67600F6D002 /* DCScribbleThumbnailCell.m in Sources */,
 				1BE2553B163FA69A00F6D002 /* DCPaletteViewCtrl.m in Sources */,
+				1BE2554A163FA8AB00F6D002 /* DCCanvasView.m in Sources */,
+				1BE2554B163FA8AB00F6D002 /* DCCanvasViewGenerator.m in Sources */,
+				1BE2554C163FA8AB00F6D002 /* DCClothCanvasView.m in Sources */,
+				1BE2554D163FA8AB00F6D002 /* DCClothCanvasViewGenerator.m in Sources */,
+				1BE2554E163FA8AB00F6D002 /* DCPaperCanvasView.m in Sources */,
+				1BE2554F163FA8AB00F6D002 /* DCPaperCanvasViewGenerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
