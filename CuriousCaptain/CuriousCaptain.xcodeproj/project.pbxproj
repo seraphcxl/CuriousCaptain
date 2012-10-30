@@ -33,6 +33,30 @@
 		1BE254A4163F7A5B00F6D002 /* DCCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE254A3163F7A5B00F6D002 /* DCCanvasViewGenerator.m */; };
 		1BE254A7163F7A8600F6D002 /* DCPaperCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE254A6163F7A8600F6D002 /* DCPaperCanvasViewGenerator.m */; };
 		1BE254AA163F7A9800F6D002 /* DCClothCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE254A9163F7A9700F6D002 /* DCClothCanvasViewGenerator.m */; };
+		1BE254CA163F81B500F6D002 /* DCCoordinatingCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE254C9163F81B400F6D002 /* DCCoordinatingCtrl.m */; };
+		1BE2550D163FA08300F6D002 /* DCDot.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE254F1163FA08300F6D002 /* DCDot.m */; };
+		1BE2550E163FA08300F6D002 /* DCMarkEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE254F4163FA08300F6D002 /* DCMarkEnumerator.m */; };
+		1BE2550F163FA08300F6D002 /* DCMarkEnumerator+Internal.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE254F6163FA08300F6D002 /* DCMarkEnumerator+Internal.m */; };
+		1BE25510163FA08300F6D002 /* DCMarkRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE254F8163FA08300F6D002 /* DCMarkRenderer.m */; };
+		1BE25511163FA08300F6D002 /* DCPrototypeCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE254FB163FA08300F6D002 /* DCPrototypeCtrl.m */; };
+		1BE25512163FA08300F6D002 /* DCScribble.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE254FD163FA08300F6D002 /* DCScribble.m */; };
+		1BE25513163FA08300F6D002 /* DCScribbleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE254FF163FA08300F6D002 /* DCScribbleManager.m */; };
+		1BE25514163FA08300F6D002 /* DCScribbleMemento.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE25501163FA08300F6D002 /* DCScribbleMemento.m */; };
+		1BE25515163FA08300F6D002 /* DCScribbleMemento+Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE25503163FA08300F6D002 /* DCScribbleMemento+Friend.m */; };
+		1BE25516163FA08300F6D002 /* DCScribbleThumbnailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE25506163FA08300F6D002 /* DCScribbleThumbnailView.m */; };
+		1BE25517163FA08300F6D002 /* DCScribbleThumbnailViewImageProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE25508163FA08300F6D002 /* DCScribbleThumbnailViewImageProxy.m */; };
+		1BE25518163FA08300F6D002 /* DCStroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE2550A163FA08300F6D002 /* DCStroke.m */; };
+		1BE25519163FA08300F6D002 /* DCVertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE2550C163FA08300F6D002 /* DCVertex.m */; };
+		1BE2551C163FA0B200F6D002 /* DCCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE2551B163FA0B200F6D002 /* DCCanvasView.m */; };
+		1BE2551F163FA0CB00F6D002 /* DCClothCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE2551E163FA0CB00F6D002 /* DCClothCanvasView.m */; };
+		1BE25522163FA1F700F6D002 /* DCPaperCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE25521163FA1F600F6D002 /* DCPaperCanvasView.m */; };
+		1BE2552E163FA63500F6D002 /* DCCanvasViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE2552C163FA63500F6D002 /* DCCanvasViewCtrl.m */; };
+		1BE2552F163FA63500F6D002 /* DCCanvasViewCtrl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BE2552D163FA63500F6D002 /* DCCanvasViewCtrl.xib */; };
+		1BE25533163FA65A00F6D002 /* DCThumbnailViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE25531163FA65A00F6D002 /* DCThumbnailViewCtrl.m */; };
+		1BE25534163FA65A00F6D002 /* DCThumbnailViewCtrl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BE25532163FA65A00F6D002 /* DCThumbnailViewCtrl.xib */; };
+		1BE25537163FA67600F6D002 /* DCScribbleThumbnailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE25536163FA67600F6D002 /* DCScribbleThumbnailCell.m */; };
+		1BE2553B163FA69A00F6D002 /* DCPaletteViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE25539163FA69A00F6D002 /* DCPaletteViewCtrl.m */; };
+		1BE2553C163FA69A00F6D002 /* DCPaletteViewCtrl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BE2553A163FA69A00F6D002 /* DCPaletteViewCtrl.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +104,54 @@
 		1BE254A6163F7A8600F6D002 /* DCPaperCanvasViewGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPaperCanvasViewGenerator.m; sourceTree = "<group>"; };
 		1BE254A8163F7A9700F6D002 /* DCClothCanvasViewGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCClothCanvasViewGenerator.h; sourceTree = "<group>"; };
 		1BE254A9163F7A9700F6D002 /* DCClothCanvasViewGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCClothCanvasViewGenerator.m; sourceTree = "<group>"; };
+		1BE254C8163F81B300F6D002 /* DCCoordinatingCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCoordinatingCtrl.h; sourceTree = "<group>"; };
+		1BE254C9163F81B400F6D002 /* DCCoordinatingCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCoordinatingCtrl.m; sourceTree = "<group>"; };
+		1BE254F0163FA08300F6D002 /* DCDot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCDot.h; path = Scribble/DCDot.h; sourceTree = "<group>"; };
+		1BE254F1163FA08300F6D002 /* DCDot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCDot.m; path = Scribble/DCDot.m; sourceTree = "<group>"; };
+		1BE254F2163FA08300F6D002 /* DCMark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCMark.h; path = Scribble/DCMark.h; sourceTree = "<group>"; };
+		1BE254F3163FA08300F6D002 /* DCMarkEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCMarkEnumerator.h; path = Scribble/DCMarkEnumerator.h; sourceTree = "<group>"; };
+		1BE254F4163FA08300F6D002 /* DCMarkEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCMarkEnumerator.m; path = Scribble/DCMarkEnumerator.m; sourceTree = "<group>"; };
+		1BE254F5163FA08300F6D002 /* DCMarkEnumerator+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DCMarkEnumerator+Internal.h"; path = "Scribble/DCMarkEnumerator+Internal.h"; sourceTree = "<group>"; };
+		1BE254F6163FA08300F6D002 /* DCMarkEnumerator+Internal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "DCMarkEnumerator+Internal.m"; path = "Scribble/DCMarkEnumerator+Internal.m"; sourceTree = "<group>"; };
+		1BE254F7163FA08300F6D002 /* DCMarkRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCMarkRenderer.h; path = Scribble/DCMarkRenderer.h; sourceTree = "<group>"; };
+		1BE254F8163FA08300F6D002 /* DCMarkRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCMarkRenderer.m; path = Scribble/DCMarkRenderer.m; sourceTree = "<group>"; };
+		1BE254F9163FA08300F6D002 /* DCMarkVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCMarkVisitor.h; path = Scribble/DCMarkVisitor.h; sourceTree = "<group>"; };
+		1BE254FA163FA08300F6D002 /* DCPrototypeCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCPrototypeCtrl.h; path = Scribble/DCPrototypeCtrl.h; sourceTree = "<group>"; };
+		1BE254FB163FA08300F6D002 /* DCPrototypeCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCPrototypeCtrl.m; path = Scribble/DCPrototypeCtrl.m; sourceTree = "<group>"; };
+		1BE254FC163FA08300F6D002 /* DCScribble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCScribble.h; path = Scribble/DCScribble.h; sourceTree = "<group>"; };
+		1BE254FD163FA08300F6D002 /* DCScribble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCScribble.m; path = Scribble/DCScribble.m; sourceTree = "<group>"; };
+		1BE254FE163FA08300F6D002 /* DCScribbleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCScribbleManager.h; path = Scribble/DCScribbleManager.h; sourceTree = "<group>"; };
+		1BE254FF163FA08300F6D002 /* DCScribbleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCScribbleManager.m; path = Scribble/DCScribbleManager.m; sourceTree = "<group>"; };
+		1BE25500163FA08300F6D002 /* DCScribbleMemento.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCScribbleMemento.h; path = Scribble/DCScribbleMemento.h; sourceTree = "<group>"; };
+		1BE25501163FA08300F6D002 /* DCScribbleMemento.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCScribbleMemento.m; path = Scribble/DCScribbleMemento.m; sourceTree = "<group>"; };
+		1BE25502163FA08300F6D002 /* DCScribbleMemento+Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DCScribbleMemento+Friend.h"; path = "Scribble/DCScribbleMemento+Friend.h"; sourceTree = "<group>"; };
+		1BE25503163FA08300F6D002 /* DCScribbleMemento+Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "DCScribbleMemento+Friend.m"; path = "Scribble/DCScribbleMemento+Friend.m"; sourceTree = "<group>"; };
+		1BE25504163FA08300F6D002 /* DCScribbleSrc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCScribbleSrc.h; path = Scribble/DCScribbleSrc.h; sourceTree = "<group>"; };
+		1BE25505163FA08300F6D002 /* DCScribbleThumbnailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCScribbleThumbnailView.h; path = Scribble/DCScribbleThumbnailView.h; sourceTree = "<group>"; };
+		1BE25506163FA08300F6D002 /* DCScribbleThumbnailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCScribbleThumbnailView.m; path = Scribble/DCScribbleThumbnailView.m; sourceTree = "<group>"; };
+		1BE25507163FA08300F6D002 /* DCScribbleThumbnailViewImageProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCScribbleThumbnailViewImageProxy.h; path = Scribble/DCScribbleThumbnailViewImageProxy.h; sourceTree = "<group>"; };
+		1BE25508163FA08300F6D002 /* DCScribbleThumbnailViewImageProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCScribbleThumbnailViewImageProxy.m; path = Scribble/DCScribbleThumbnailViewImageProxy.m; sourceTree = "<group>"; };
+		1BE25509163FA08300F6D002 /* DCStroke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCStroke.h; path = Scribble/DCStroke.h; sourceTree = "<group>"; };
+		1BE2550A163FA08300F6D002 /* DCStroke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCStroke.m; path = Scribble/DCStroke.m; sourceTree = "<group>"; };
+		1BE2550B163FA08300F6D002 /* DCVertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCVertex.h; path = Scribble/DCVertex.h; sourceTree = "<group>"; };
+		1BE2550C163FA08300F6D002 /* DCVertex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCVertex.m; path = Scribble/DCVertex.m; sourceTree = "<group>"; };
+		1BE2551A163FA0B100F6D002 /* DCCanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCCanvasView.h; sourceTree = "<group>"; };
+		1BE2551B163FA0B200F6D002 /* DCCanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCCanvasView.m; sourceTree = "<group>"; };
+		1BE2551D163FA0CB00F6D002 /* DCClothCanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCClothCanvasView.h; sourceTree = "<group>"; };
+		1BE2551E163FA0CB00F6D002 /* DCClothCanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCClothCanvasView.m; sourceTree = "<group>"; };
+		1BE25520163FA1F600F6D002 /* DCPaperCanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPaperCanvasView.h; sourceTree = "<group>"; };
+		1BE25521163FA1F600F6D002 /* DCPaperCanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPaperCanvasView.m; sourceTree = "<group>"; };
+		1BE2552B163FA63500F6D002 /* DCCanvasViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCCanvasViewCtrl.h; path = CanvasViewCtrl/DCCanvasViewCtrl.h; sourceTree = "<group>"; };
+		1BE2552C163FA63500F6D002 /* DCCanvasViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCCanvasViewCtrl.m; path = CanvasViewCtrl/DCCanvasViewCtrl.m; sourceTree = "<group>"; };
+		1BE2552D163FA63500F6D002 /* DCCanvasViewCtrl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DCCanvasViewCtrl.xib; path = CanvasViewCtrl/DCCanvasViewCtrl.xib; sourceTree = "<group>"; };
+		1BE25530163FA65A00F6D002 /* DCThumbnailViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCThumbnailViewCtrl.h; path = ThumbnailViewCtrl/DCThumbnailViewCtrl.h; sourceTree = "<group>"; };
+		1BE25531163FA65A00F6D002 /* DCThumbnailViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCThumbnailViewCtrl.m; path = ThumbnailViewCtrl/DCThumbnailViewCtrl.m; sourceTree = "<group>"; };
+		1BE25532163FA65A00F6D002 /* DCThumbnailViewCtrl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DCThumbnailViewCtrl.xib; path = ThumbnailViewCtrl/DCThumbnailViewCtrl.xib; sourceTree = "<group>"; };
+		1BE25535163FA67600F6D002 /* DCScribbleThumbnailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCScribbleThumbnailCell.h; path = ThumbnailViewCtrl/DCScribbleThumbnailCell.h; sourceTree = "<group>"; };
+		1BE25536163FA67600F6D002 /* DCScribbleThumbnailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCScribbleThumbnailCell.m; path = ThumbnailViewCtrl/DCScribbleThumbnailCell.m; sourceTree = "<group>"; };
+		1BE25538163FA69A00F6D002 /* DCPaletteViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCPaletteViewCtrl.h; path = PaletteViewCtrl/DCPaletteViewCtrl.h; sourceTree = "<group>"; };
+		1BE25539163FA69A00F6D002 /* DCPaletteViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCPaletteViewCtrl.m; path = PaletteViewCtrl/DCPaletteViewCtrl.m; sourceTree = "<group>"; };
+		1BE2553A163FA69A00F6D002 /* DCPaletteViewCtrl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DCPaletteViewCtrl.xib; path = PaletteViewCtrl/DCPaletteViewCtrl.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +200,9 @@
 		1B496C74163E1C0200A4FB80 /* CuriousCaptain */ = {
 			isa = PBXGroup;
 			children = (
+				1BE25525163FA5DE00F6D002 /* PaletteViewCtrl */,
+				1BE25524163FA5CA00F6D002 /* ThumbnailViewCtrl */,
+				1BE25523163FA5BA00F6D002 /* CanvasViewCtrl */,
 				1B496C75163E1C0200A4FB80 /* Supporting Files */,
 				1B496CBF163E795300A4FB80 /* Utility */,
 				1B496CA0163E519E00A4FB80 /* Command */,
@@ -138,12 +213,20 @@
 				1B496C87163E1C0200A4FB80 /* DCViewController.m */,
 				1B496C89163E1C0200A4FB80 /* DCViewController_iPhone.xib */,
 				1B496C8C163E1C0200A4FB80 /* DCViewController_iPad.xib */,
+				1BE254C8163F81B300F6D002 /* DCCoordinatingCtrl.h */,
+				1BE254C9163F81B400F6D002 /* DCCoordinatingCtrl.m */,
 				1BE254A2163F7A5B00F6D002 /* DCCanvasViewGenerator.h */,
 				1BE254A3163F7A5B00F6D002 /* DCCanvasViewGenerator.m */,
 				1BE254A5163F7A8600F6D002 /* DCPaperCanvasViewGenerator.h */,
 				1BE254A6163F7A8600F6D002 /* DCPaperCanvasViewGenerator.m */,
 				1BE254A8163F7A9700F6D002 /* DCClothCanvasViewGenerator.h */,
 				1BE254A9163F7A9700F6D002 /* DCClothCanvasViewGenerator.m */,
+				1BE2551A163FA0B100F6D002 /* DCCanvasView.h */,
+				1BE2551B163FA0B200F6D002 /* DCCanvasView.m */,
+				1BE2551D163FA0CB00F6D002 /* DCClothCanvasView.h */,
+				1BE2551E163FA0CB00F6D002 /* DCClothCanvasView.m */,
+				1BE25520163FA1F600F6D002 /* DCPaperCanvasView.h */,
+				1BE25521163FA1F600F6D002 /* DCPaperCanvasView.m */,
 			);
 			path = CuriousCaptain;
 			sourceTree = "<group>";
@@ -184,6 +267,35 @@
 		1B496CAF163E5D2500A4FB80 /* Scribble */ = {
 			isa = PBXGroup;
 			children = (
+				1BE254F0163FA08300F6D002 /* DCDot.h */,
+				1BE254F1163FA08300F6D002 /* DCDot.m */,
+				1BE254F2163FA08300F6D002 /* DCMark.h */,
+				1BE254F3163FA08300F6D002 /* DCMarkEnumerator.h */,
+				1BE254F4163FA08300F6D002 /* DCMarkEnumerator.m */,
+				1BE254F5163FA08300F6D002 /* DCMarkEnumerator+Internal.h */,
+				1BE254F6163FA08300F6D002 /* DCMarkEnumerator+Internal.m */,
+				1BE254F7163FA08300F6D002 /* DCMarkRenderer.h */,
+				1BE254F8163FA08300F6D002 /* DCMarkRenderer.m */,
+				1BE254F9163FA08300F6D002 /* DCMarkVisitor.h */,
+				1BE254FA163FA08300F6D002 /* DCPrototypeCtrl.h */,
+				1BE254FB163FA08300F6D002 /* DCPrototypeCtrl.m */,
+				1BE254FC163FA08300F6D002 /* DCScribble.h */,
+				1BE254FD163FA08300F6D002 /* DCScribble.m */,
+				1BE254FE163FA08300F6D002 /* DCScribbleManager.h */,
+				1BE254FF163FA08300F6D002 /* DCScribbleManager.m */,
+				1BE25500163FA08300F6D002 /* DCScribbleMemento.h */,
+				1BE25501163FA08300F6D002 /* DCScribbleMemento.m */,
+				1BE25502163FA08300F6D002 /* DCScribbleMemento+Friend.h */,
+				1BE25503163FA08300F6D002 /* DCScribbleMemento+Friend.m */,
+				1BE25504163FA08300F6D002 /* DCScribbleSrc.h */,
+				1BE25505163FA08300F6D002 /* DCScribbleThumbnailView.h */,
+				1BE25506163FA08300F6D002 /* DCScribbleThumbnailView.m */,
+				1BE25507163FA08300F6D002 /* DCScribbleThumbnailViewImageProxy.h */,
+				1BE25508163FA08300F6D002 /* DCScribbleThumbnailViewImageProxy.m */,
+				1BE25509163FA08300F6D002 /* DCStroke.h */,
+				1BE2550A163FA08300F6D002 /* DCStroke.m */,
+				1BE2550B163FA08300F6D002 /* DCVertex.h */,
+				1BE2550C163FA08300F6D002 /* DCVertex.m */,
 			);
 			name = Scribble;
 			sourceTree = "<group>";
@@ -201,6 +313,38 @@
 				1BE2549B163F6AC100F6D002 /* UIView+UIImage.m */,
 			);
 			name = Utility;
+			sourceTree = "<group>";
+		};
+		1BE25523163FA5BA00F6D002 /* CanvasViewCtrl */ = {
+			isa = PBXGroup;
+			children = (
+				1BE2552B163FA63500F6D002 /* DCCanvasViewCtrl.h */,
+				1BE2552C163FA63500F6D002 /* DCCanvasViewCtrl.m */,
+				1BE2552D163FA63500F6D002 /* DCCanvasViewCtrl.xib */,
+			);
+			name = CanvasViewCtrl;
+			sourceTree = "<group>";
+		};
+		1BE25524163FA5CA00F6D002 /* ThumbnailViewCtrl */ = {
+			isa = PBXGroup;
+			children = (
+				1BE25530163FA65A00F6D002 /* DCThumbnailViewCtrl.h */,
+				1BE25531163FA65A00F6D002 /* DCThumbnailViewCtrl.m */,
+				1BE25532163FA65A00F6D002 /* DCThumbnailViewCtrl.xib */,
+				1BE25535163FA67600F6D002 /* DCScribbleThumbnailCell.h */,
+				1BE25536163FA67600F6D002 /* DCScribbleThumbnailCell.m */,
+			);
+			name = ThumbnailViewCtrl;
+			sourceTree = "<group>";
+		};
+		1BE25525163FA5DE00F6D002 /* PaletteViewCtrl */ = {
+			isa = PBXGroup;
+			children = (
+				1BE25538163FA69A00F6D002 /* DCPaletteViewCtrl.h */,
+				1BE25539163FA69A00F6D002 /* DCPaletteViewCtrl.m */,
+				1BE2553A163FA69A00F6D002 /* DCPaletteViewCtrl.xib */,
+			);
+			name = PaletteViewCtrl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +405,9 @@
 				1B496C85163E1C0200A4FB80 /* Default-568h@2x.png in Resources */,
 				1B496C8B163E1C0200A4FB80 /* DCViewController_iPhone.xib in Resources */,
 				1B496C8E163E1C0200A4FB80 /* DCViewController_iPad.xib in Resources */,
+				1BE2552F163FA63500F6D002 /* DCCanvasViewCtrl.xib in Resources */,
+				1BE25534163FA65A00F6D002 /* DCThumbnailViewCtrl.xib in Resources */,
+				1BE2553C163FA69A00F6D002 /* DCPaletteViewCtrl.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +434,27 @@
 				1BE254A4163F7A5B00F6D002 /* DCCanvasViewGenerator.m in Sources */,
 				1BE254A7163F7A8600F6D002 /* DCPaperCanvasViewGenerator.m in Sources */,
 				1BE254AA163F7A9800F6D002 /* DCClothCanvasViewGenerator.m in Sources */,
+				1BE254CA163F81B500F6D002 /* DCCoordinatingCtrl.m in Sources */,
+				1BE2550D163FA08300F6D002 /* DCDot.m in Sources */,
+				1BE2550E163FA08300F6D002 /* DCMarkEnumerator.m in Sources */,
+				1BE2550F163FA08300F6D002 /* DCMarkEnumerator+Internal.m in Sources */,
+				1BE25510163FA08300F6D002 /* DCMarkRenderer.m in Sources */,
+				1BE25511163FA08300F6D002 /* DCPrototypeCtrl.m in Sources */,
+				1BE25512163FA08300F6D002 /* DCScribble.m in Sources */,
+				1BE25513163FA08300F6D002 /* DCScribbleManager.m in Sources */,
+				1BE25514163FA08300F6D002 /* DCScribbleMemento.m in Sources */,
+				1BE25515163FA08300F6D002 /* DCScribbleMemento+Friend.m in Sources */,
+				1BE25516163FA08300F6D002 /* DCScribbleThumbnailView.m in Sources */,
+				1BE25517163FA08300F6D002 /* DCScribbleThumbnailViewImageProxy.m in Sources */,
+				1BE25518163FA08300F6D002 /* DCStroke.m in Sources */,
+				1BE25519163FA08300F6D002 /* DCVertex.m in Sources */,
+				1BE2551C163FA0B200F6D002 /* DCCanvasView.m in Sources */,
+				1BE2551F163FA0CB00F6D002 /* DCClothCanvasView.m in Sources */,
+				1BE25522163FA1F700F6D002 /* DCPaperCanvasView.m in Sources */,
+				1BE2552E163FA63500F6D002 /* DCCanvasViewCtrl.m in Sources */,
+				1BE25533163FA65A00F6D002 /* DCThumbnailViewCtrl.m in Sources */,
+				1BE25537163FA67600F6D002 /* DCScribbleThumbnailCell.m in Sources */,
+				1BE2553B163FA69A00F6D002 /* DCPaletteViewCtrl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
