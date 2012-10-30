@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "DCCanvasView.h"
 @interface DCCanvasViewGenerator : NSObject
+
+- (DCCanvasView *)canvasViewWithFrame:(CGRect)aFrame;
 
 @end

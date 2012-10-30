@@ -7,7 +7,12 @@
 //
 
 #import "DCClothCanvasViewGenerator.h"
+#import "DCClothCanvasView.h"
 
 @implementation DCClothCanvasViewGenerator
+
+- (DCCanvasView *)canvasViewWithFrame:(CGRect)aFrame {
+	return [[[DCClothCanvasView alloc] initWithFrame:aFrame] autorelease];
+}
 
 @end

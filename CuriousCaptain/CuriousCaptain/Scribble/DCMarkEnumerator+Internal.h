@@ -7,7 +7,20 @@
 //
 
 #import "DCMarkEnumerator.h"
+#include "DCMark.h"
+#import "NSMutableArray+Stack.h"
 
-@interface DCMarkEnumerator (Internal)
+@interface DCMarkEnumerator () {
+    NSMutableArray *_stack;
+}
+
+@end
+
+@interface DCMarkEnumerator (Internal) {
+    
+}
+
+- (id)initWithMark:(id<DCMark>)mark;
+- (void)traverseAndBuildStackWithMark:(id<DCMark>)mark;
 
 @end

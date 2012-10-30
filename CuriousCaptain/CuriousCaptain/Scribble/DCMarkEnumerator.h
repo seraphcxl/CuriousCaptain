@@ -10,4 +10,7 @@
 
 @interface DCMarkEnumerator : NSEnumerator
 
+- (NSArray *)allObjects;
+- (id)nextObject;
+
 @end

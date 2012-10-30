@@ -7,12 +7,13 @@
 //
 
 #import "DCCustimizableCommand.h"
+#import "DCScribbleSrc.h"
 
 @interface DCOpenScribbleCommand : DCCustimizableCommand
 
-@property (nonatomic, retain) id <ScribbleSource> scribbleSource;
+@property (nonatomic, retain) id<DCScribbleSrc> scribbleSrc;
 
-- (id)initWithScribbleSource:(id <ScribbleSource>) aScribbleSource;
+- (id)initWithScribbleSource:(id<DCScribbleSrc>)aScribbleSource;
 - (void)execute;
 
 @end

@@ -7,7 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DCMarkVisitor.h"
+#import "DCDot.h"
+#import "DCVertex.h"
+#import "DCStroke.h"
 
-@interface DCMarkRenderer : NSObject
+@interface DCMarkRenderer : NSObject <DCMarkVisitor> {
+    
+}
+
+- (id)initWithCGContext:(CGContextRef)context;
+
+- (void)visitMark:(id<DCMark>)mark;
+- (void)visitDot:(DCDot *)dot;
+- (void)visitVertex:(DCVertex *)vertex;
+- (void)visitStroke:(DCStroke *)stroke;
 
 @end

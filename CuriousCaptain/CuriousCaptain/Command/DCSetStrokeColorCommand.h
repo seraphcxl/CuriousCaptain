@@ -15,9 +15,9 @@ typedef void (^PostColorUpdateProvider)(UIColor *color);
 
 @protocol DCSetStrokeColorCommandDelegate
 
-- (void)command:(DCSetStrokeColorCommand *) command didRequestColorComponentsForRed:(CGFloat *) red green:(CGFloat *) green blue:(CGFloat *) blue;
+- (void)command:(DCSetStrokeColorCommand *)command didRequestColorComponentsForRed:(CGFloat *)red green:(CGFloat *)green blue:(CGFloat *)blue;
 
-- (void)command:(DCSetStrokeColorCommand *) command didFinishColorUpdateWithColor:(UIColor *) color;
+- (void)command:(DCSetStrokeColorCommand *)command didFinishColorUpdateWithColor:(UIColor *)color;
 
 @end
 

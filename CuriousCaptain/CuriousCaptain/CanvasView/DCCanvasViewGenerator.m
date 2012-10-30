@@ -10,4 +10,8 @@
 
 @implementation DCCanvasViewGenerator
 
+- (DCCanvasView *)canvasViewWithFrame:(CGRect)aFrame {
+	return [[[DCCanvasView alloc] initWithFrame:aFrame] autorelease];
+}
+
 @end

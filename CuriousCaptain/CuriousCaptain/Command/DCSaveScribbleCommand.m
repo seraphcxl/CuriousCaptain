@@ -7,18 +7,21 @@
 //
 
 #import "DCSaveScribbleCommand.h"
+#import "DCCoordinatingCtrl.h"
+#import "DCScribbleManager.h"
+#import "UIView+UIImage.h"
 
 @implementation DCSaveScribbleCommand
 
 - (void)execute {
     do {
-        CoordinatingController *coordinatingController = [CoordinatingController sharedInstance];
-        CanvasViewController *canvasViewController = [coordinatingController canvasViewController];
-        UIImage *canvasViewImage = [[canvasViewController canvasView] image];
-        Scribble *scribble = [canvasViewController scribble];
+        DCCoordinatingCtrl *coordinatingCtrl = [DCCoordinatingCtrl sharedInstance];
+        DCCanvasViewCtrl *canvasViewCtrl = [coordinatingCtrl canvasViewCtrl];
+        UIImage *canvasViewImage = [[canvasViewCtrl canvasView] image];
+        Scribble *scribble = [canvasViewCtrl scribble];
         
-        ScribbleManager *scribbleManager = [[[ScribbleManager alloc] init] autorelease];
-        [scribbleManager saveScribble:scribble thumbnail:canvasViewImage];
+        DCScribbleManager *scribbleMgr = [[[DCScribbleManager alloc] init] autorelease];
+        [scribbleMgr saveScribble:scribble thumbnail:canvasViewImage];
         
         UIAlertView *alertView = [[[UIAlertView alloc] initWithTitle:@"Your scribble is saved" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] autorelease];
         [alertView show];

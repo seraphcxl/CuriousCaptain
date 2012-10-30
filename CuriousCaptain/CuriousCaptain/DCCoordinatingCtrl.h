@@ -7,6 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DCCanvasViewCtrl.h"
+#import "DCThumbnailViewCtrl.h"
+#import "DCPaletteViewCtrl.h"
 
 typedef enum
 {
@@ -16,5 +19,12 @@ typedef enum
 } ButtonType;
 
 @interface DCCoordinatingCtrl : NSObject
+
+@property (nonatomic, readonly) UIViewController *activeViewCtrl;
+@property (nonatomic, readonly) DCCanvasViewCtrl *canvasViewCtrl;
+
++ (DCCoordinatingCtrl *)sharedInstance;
+
+- (IBAction)requestViewChangeByObject:(id)object;
 
 @end

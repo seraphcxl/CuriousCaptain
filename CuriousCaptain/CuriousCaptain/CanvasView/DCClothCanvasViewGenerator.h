@@ -10,4 +10,6 @@
 
 @interface DCClothCanvasViewGenerator : DCCanvasViewGenerator
 
+- (DCCanvasView *)canvasViewWithFrame:(CGRect)aFrame;
+
 @end

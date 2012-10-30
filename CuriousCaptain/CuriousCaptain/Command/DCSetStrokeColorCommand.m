@@ -7,6 +7,8 @@
 //
 
 #import "DCSetStrokeColorCommand.h"
+#import "DCCoordinatingCtrl.h"
+#import "DCCanvasViewCtrl.h"
 
 @implementation DCSetStrokeColorCommand
 
@@ -36,9 +38,9 @@
         
         UIColor *color = [UIColor colorWithRed:redValue green:greenValue blue:blueValue alpha:1.0];
         
-        CoordinatingController *coordinator = [CoordinatingController sharedInstance];
-        CanvasViewController *controller = [coordinator canvasViewController];
-        [controller setStrokeColor:color];
+        DCCoordinatingCtrl *coordinatingCtrl = [DCCoordinatingCtrl sharedInstance];
+        DCCanvasViewCtrl *canvasViewCtrl = [coordinatingCtrl canvasViewController];
+        canvasViewCtrl.strokeColor = color;
         
         [self.delegate command:self didFinishColorUpdateWithColor:color];
         

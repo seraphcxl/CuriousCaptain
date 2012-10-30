@@ -7,6 +7,8 @@
 //
 
 #import "DCSetStrokeSizeCommand.h"
+#import "DCCoordinatingCtrl.h"
+#import "DCCanvasViewCtrl.h"
 
 @implementation DCSetStrokeSizeCommand
 
@@ -23,10 +25,10 @@
         CGFloat strokeSize = 1;
         [self.delegate command:self didRequestForStrokeSize:&strokeSize];
         
-        CoordinatingController *coordinator = [CoordinatingController sharedInstance];
-        CanvasViewController *controller = [coordinator canvasViewController];
+        DCCoordinatingCtrl *coordinatingCtrl = [DCCoordinatingCtrl sharedInstance];
+        DCCanvasViewCtrl *canvasViewCtrl = [coordinatingCtrl canvasViewController];
         
-        [controller setStrokeSize:strokeSize];
+        canvasViewCtrl.strokeSize = strokeSize;
     } while (NO);
 }
 

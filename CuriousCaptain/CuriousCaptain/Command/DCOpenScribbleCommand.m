@@ -7,13 +7,15 @@
 //
 
 #import "DCOpenScribbleCommand.h"
+#import "DCCoordinatingCtrl.h"
+#import "DCCanvasViewCtrl.h"
 
 @implementation DCOpenScribbleCommand
 
-@synthesize scribbleSource =_scribbleSource;
+@synthesize scribbleSrc =_scribbleSrc;
 
 - (void)dealloc {
-    self.scribbleSource = nil;
+    self.scribbleSrc = nil;
     
     [super dealloc];
 }
@@ -21,20 +23,20 @@
 - (id)initWithScribbleSource:(id)aScribbleSource {
     self = [super init];
     if (self) {
-        self.scribbleSource = aScribbleSource;
+        self.scribbleSrc = aScribbleSource;
     }
     return self;
 }
 
 - (void)execute {
     do {
-        Scribble *scribble = [self.scribbleSource scribble];
+        DCScribble *scribble = [self.scribbleSrc scribble];
         
-        CoordinatingController *coordinator = [CoordinatingController sharedInstance];
-        CanvasViewController *controller = [coordinator canvasViewController];
-        [controller setScribble:scribble];
+        DCCoordinatingCtrl *coordinatorCtrl = [DCCoordinatingCtrl sharedInstance];
+        DCCanvasViewCtrl *canvasViewCtrl = [coordinatorCtrl canvasViewController];
+        canvasViewCtrl.scribble = scribble;
         
-        [coordinator requestViewChangeByObject:self];
+        [coordinatorCtrl requestViewChangeByObject:self];
     } while (NO);
 }
 

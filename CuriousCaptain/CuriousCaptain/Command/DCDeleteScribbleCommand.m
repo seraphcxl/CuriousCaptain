@@ -7,16 +7,18 @@
 //
 
 #import "DCDeleteScribbleCommand.h"
+#import "DCCoordinatingCtrl.h"
+#import "DCCanvasViewCtrl.h"
 
 @implementation DCDeleteScribbleCommand
 
 - (void)execute {
     do {
-        CoordinatingController *coordinatingController = [CoordinatingController sharedInstance];
-        CanvasViewController *canvasViewController = [coordinatingController canvasViewController];
+        DCCoordinatingCtrl *coordinatingCtrl = [DCCoordinatingCtrl sharedInstance];
+        DCCanvasViewCtrl *canvasViewCtrl = [coordinatingCtrl canvasViewCtrl];
         
-        Scribble *newScribble = [[[Scribble alloc] init] autorelease];
-        [canvasViewController setScribble:newScribble];
+        DCScribble *newScribble = [[[DCScribble alloc] init] autorelease];
+        canvasViewCtrl.scribble = newScribble;
     } while (NO);
 }
 

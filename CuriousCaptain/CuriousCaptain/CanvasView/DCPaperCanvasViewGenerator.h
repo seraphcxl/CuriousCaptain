@@ -10,4 +10,6 @@
 
 @interface DCPaperCanvasViewGenerator : DCCanvasViewGenerator
 
+- (DCCanvasView *)canvasViewWithFrame:(CGRect)aFrame;
+
 @end
