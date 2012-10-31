@@ -15,6 +15,9 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
+        UIImage *backgroundImage = [UIImage imageNamed:@"paper"];
+        UIImageView *backgroundView = [[[UIImageView alloc] initWithImage:backgroundImage] autorelease];
+        [self addSubview:backgroundView];
     }
     return self;
 }

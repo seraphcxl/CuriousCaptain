@@ -10,4 +10,7 @@
 
 @interface DCScribbleMemento : NSObject
 
++ (DCScribbleMemento *)mementoWithData:(NSData *)data;
+- (NSData *)data;
+
 @end

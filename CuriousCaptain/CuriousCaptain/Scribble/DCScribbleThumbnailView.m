@@ -10,6 +10,12 @@
 
 @implementation DCScribbleThumbnailView
 
+@synthesize imagePath = _imagePath;
+@synthesize scribblePath = _scribblePath;
+
+@dynamic image;
+@dynamic scribble;
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];

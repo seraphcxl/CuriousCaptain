@@ -19,6 +19,10 @@
     [super dealloc];
 }
 
+- (void)acceptMarkVisitor:(id<DCMarkVisitor>)visitor {
+    [visitor visitDot:self];
+}
+
 #pragma mark NSCopying method
 
 // it needs to be implemented for memento

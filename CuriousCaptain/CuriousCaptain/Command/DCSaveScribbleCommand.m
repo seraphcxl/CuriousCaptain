@@ -18,7 +18,7 @@
         DCCoordinatingCtrl *coordinatingCtrl = [DCCoordinatingCtrl sharedInstance];
         DCCanvasViewCtrl *canvasViewCtrl = [coordinatingCtrl canvasViewCtrl];
         UIImage *canvasViewImage = [[canvasViewCtrl canvasView] image];
-        Scribble *scribble = [canvasViewCtrl scribble];
+        DCScribble *scribble = [canvasViewCtrl scribble];
         
         DCScribbleManager *scribbleMgr = [[[DCScribbleManager alloc] init] autorelease];
         [scribbleMgr saveScribble:scribble thumbnail:canvasViewImage];

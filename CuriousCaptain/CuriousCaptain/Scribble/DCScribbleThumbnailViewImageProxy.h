@@ -7,7 +7,12 @@
 //
 
 #import "DCScribbleThumbnailView.h"
+#import "DCCustimizableCommand.h"
 
 @interface DCScribbleThumbnailViewImageProxy : DCScribbleThumbnailView
+
+@property (nonatomic, readonly) UIImage *image;
+@property (nonatomic, readonly) DCScribble *scribble;
+@property (nonatomic, retain) DCCustimizableCommand *touchCommand;
 
 @end

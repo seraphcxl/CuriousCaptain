@@ -39,7 +39,7 @@
         UIColor *color = [UIColor colorWithRed:redValue green:greenValue blue:blueValue alpha:1.0];
         
         DCCoordinatingCtrl *coordinatingCtrl = [DCCoordinatingCtrl sharedInstance];
-        DCCanvasViewCtrl *canvasViewCtrl = [coordinatingCtrl canvasViewController];
+        DCCanvasViewCtrl *canvasViewCtrl = [coordinatingCtrl canvasViewCtrl];
         canvasViewCtrl.strokeColor = color;
         
         [self.delegate command:self didFinishColorUpdateWithColor:color];

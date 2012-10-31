@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol DCMark;
+
 @interface DCCanvasView : UIView
+
+@property (nonatomic, retain) id<DCMark> mark;
 
 @end

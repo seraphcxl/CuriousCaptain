@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DCScribble.h"
 
 @protocol DCScribbleSrc <NSObject>
+
+- (DCScribble *)scribble;
 
 @end

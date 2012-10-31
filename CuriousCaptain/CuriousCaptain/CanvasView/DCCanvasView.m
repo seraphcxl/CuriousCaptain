@@ -7,16 +7,39 @@
 //
 
 #import "DCCanvasView.h"
+#import "DCMarkRenderer.h"
 
 @implementation DCCanvasView
+
+@synthesize mark = _mark;
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
+        self.backgroundColor = [UIColor whiteColor];
     }
     return self;
+}
+
+- (void)dealloc {
+    self.mark = nil;
+    
+    [super dealloc];
+}
+
+- (void)drawRect:(CGRect)rect {
+    
+    // Drawing code
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    // create a renderer visitor
+    DCMarkRenderer *markRenderer = [[[DCMarkRenderer alloc] initWithCGContext:context] autorelease];
+    
+    // pass this renderer along the mark composite structure
+    [self.mark acceptMarkVisitor:markRenderer];
+    
 }
 
 /*

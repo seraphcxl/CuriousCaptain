@@ -16,9 +16,6 @@
 		1B496C81163E1C0200A4FB80 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B496C80163E1C0200A4FB80 /* Default.png */; };
 		1B496C83163E1C0200A4FB80 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B496C82163E1C0200A4FB80 /* Default@2x.png */; };
 		1B496C85163E1C0200A4FB80 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B496C84163E1C0200A4FB80 /* Default-568h@2x.png */; };
-		1B496C88163E1C0200A4FB80 /* DCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B496C87163E1C0200A4FB80 /* DCViewController.m */; };
-		1B496C8B163E1C0200A4FB80 /* DCViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B496C89163E1C0200A4FB80 /* DCViewController_iPhone.xib */; };
-		1B496C8E163E1C0200A4FB80 /* DCViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B496C8C163E1C0200A4FB80 /* DCViewController_iPad.xib */; };
 		1B496CA4163E521100A4FB80 /* DCCustimizableCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B496CA3163E521100A4FB80 /* DCCustimizableCommand.m */; };
 		1B496CA7163E534B00A4FB80 /* DCSaveScribbleCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B496CA6163E534B00A4FB80 /* DCSaveScribbleCommand.m */; };
 		1B496CAA163E570F00A4FB80 /* DCDeleteScribbleCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B496CA9163E570F00A4FB80 /* DCDeleteScribbleCommand.m */; };
@@ -39,7 +36,6 @@
 		1BE25512163FA08300F6D002 /* DCScribble.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE254FD163FA08300F6D002 /* DCScribble.m */; };
 		1BE25513163FA08300F6D002 /* DCScribbleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE254FF163FA08300F6D002 /* DCScribbleManager.m */; };
 		1BE25514163FA08300F6D002 /* DCScribbleMemento.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE25501163FA08300F6D002 /* DCScribbleMemento.m */; };
-		1BE25515163FA08300F6D002 /* DCScribbleMemento+Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE25503163FA08300F6D002 /* DCScribbleMemento+Friend.m */; };
 		1BE25516163FA08300F6D002 /* DCScribbleThumbnailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE25506163FA08300F6D002 /* DCScribbleThumbnailView.m */; };
 		1BE25517163FA08300F6D002 /* DCScribbleThumbnailViewImageProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE25508163FA08300F6D002 /* DCScribbleThumbnailViewImageProxy.m */; };
 		1BE25518163FA08300F6D002 /* DCStroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE2550A163FA08300F6D002 /* DCStroke.m */; };
@@ -73,10 +69,6 @@
 		1B496C80163E1C0200A4FB80 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		1B496C82163E1C0200A4FB80 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		1B496C84163E1C0200A4FB80 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		1B496C86163E1C0200A4FB80 /* DCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DCViewController.h; sourceTree = "<group>"; };
-		1B496C87163E1C0200A4FB80 /* DCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DCViewController.m; sourceTree = "<group>"; };
-		1B496C8A163E1C0200A4FB80 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DCViewController_iPhone.xib; sourceTree = "<group>"; };
-		1B496C8D163E1C0200A4FB80 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DCViewController_iPad.xib; sourceTree = "<group>"; };
 		1B496CA2163E521100A4FB80 /* DCCustimizableCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCCustimizableCommand.h; path = Command/DCCustimizableCommand.h; sourceTree = "<group>"; };
 		1B496CA3163E521100A4FB80 /* DCCustimizableCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCCustimizableCommand.m; path = Command/DCCustimizableCommand.m; sourceTree = "<group>"; };
 		1B496CA5163E534B00A4FB80 /* DCSaveScribbleCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCSaveScribbleCommand.h; path = Command/DCSaveScribbleCommand.h; sourceTree = "<group>"; };
@@ -119,7 +111,6 @@
 		1BE25500163FA08300F6D002 /* DCScribbleMemento.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCScribbleMemento.h; path = Scribble/DCScribbleMemento.h; sourceTree = "<group>"; };
 		1BE25501163FA08300F6D002 /* DCScribbleMemento.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCScribbleMemento.m; path = Scribble/DCScribbleMemento.m; sourceTree = "<group>"; };
 		1BE25502163FA08300F6D002 /* DCScribbleMemento+Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DCScribbleMemento+Friend.h"; path = "Scribble/DCScribbleMemento+Friend.h"; sourceTree = "<group>"; };
-		1BE25503163FA08300F6D002 /* DCScribbleMemento+Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "DCScribbleMemento+Friend.m"; path = "Scribble/DCScribbleMemento+Friend.m"; sourceTree = "<group>"; };
 		1BE25504163FA08300F6D002 /* DCScribbleSrc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCScribbleSrc.h; path = Scribble/DCScribbleSrc.h; sourceTree = "<group>"; };
 		1BE25505163FA08300F6D002 /* DCScribbleThumbnailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCScribbleThumbnailView.h; path = Scribble/DCScribbleThumbnailView.h; sourceTree = "<group>"; };
 		1BE25506163FA08300F6D002 /* DCScribbleThumbnailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCScribbleThumbnailView.m; path = Scribble/DCScribbleThumbnailView.m; sourceTree = "<group>"; };
@@ -210,10 +201,6 @@
 				1B496CAF163E5D2500A4FB80 /* Scribble */,
 				1B496C7D163E1C0200A4FB80 /* DCAppDelegate.h */,
 				1B496C7E163E1C0200A4FB80 /* DCAppDelegate.m */,
-				1B496C86163E1C0200A4FB80 /* DCViewController.h */,
-				1B496C87163E1C0200A4FB80 /* DCViewController.m */,
-				1B496C89163E1C0200A4FB80 /* DCViewController_iPhone.xib */,
-				1B496C8C163E1C0200A4FB80 /* DCViewController_iPad.xib */,
 				1BE254C8163F81B300F6D002 /* DCCoordinatingCtrl.h */,
 				1BE254C9163F81B400F6D002 /* DCCoordinatingCtrl.m */,
 			);
@@ -275,7 +262,6 @@
 				1BE25500163FA08300F6D002 /* DCScribbleMemento.h */,
 				1BE25501163FA08300F6D002 /* DCScribbleMemento.m */,
 				1BE25502163FA08300F6D002 /* DCScribbleMemento+Friend.h */,
-				1BE25503163FA08300F6D002 /* DCScribbleMemento+Friend.m */,
 				1BE25504163FA08300F6D002 /* DCScribbleSrc.h */,
 				1BE25505163FA08300F6D002 /* DCScribbleThumbnailView.h */,
 				1BE25506163FA08300F6D002 /* DCScribbleThumbnailView.m */,
@@ -411,8 +397,6 @@
 				1B496C81163E1C0200A4FB80 /* Default.png in Resources */,
 				1B496C83163E1C0200A4FB80 /* Default@2x.png in Resources */,
 				1B496C85163E1C0200A4FB80 /* Default-568h@2x.png in Resources */,
-				1B496C8B163E1C0200A4FB80 /* DCViewController_iPhone.xib in Resources */,
-				1B496C8E163E1C0200A4FB80 /* DCViewController_iPad.xib in Resources */,
 				1BE2552F163FA63500F6D002 /* DCCanvasViewCtrl.xib in Resources */,
 				1BE25534163FA65A00F6D002 /* DCThumbnailViewCtrl.xib in Resources */,
 				1BE2553C163FA69A00F6D002 /* DCPaletteViewCtrl.xib in Resources */,
@@ -428,7 +412,6 @@
 			files = (
 				1B496C7B163E1C0200A4FB80 /* main.m in Sources */,
 				1B496C7F163E1C0200A4FB80 /* DCAppDelegate.m in Sources */,
-				1B496C88163E1C0200A4FB80 /* DCViewController.m in Sources */,
 				1B496CA4163E521100A4FB80 /* DCCustimizableCommand.m in Sources */,
 				1B496CA7163E534B00A4FB80 /* DCSaveScribbleCommand.m in Sources */,
 				1B496CAA163E570F00A4FB80 /* DCDeleteScribbleCommand.m in Sources */,
@@ -448,7 +431,6 @@
 				1BE25512163FA08300F6D002 /* DCScribble.m in Sources */,
 				1BE25513163FA08300F6D002 /* DCScribbleManager.m in Sources */,
 				1BE25514163FA08300F6D002 /* DCScribbleMemento.m in Sources */,
-				1BE25515163FA08300F6D002 /* DCScribbleMemento+Friend.m in Sources */,
 				1BE25516163FA08300F6D002 /* DCScribbleThumbnailView.m in Sources */,
 				1BE25517163FA08300F6D002 /* DCScribbleThumbnailViewImageProxy.m in Sources */,
 				1BE25518163FA08300F6D002 /* DCStroke.m in Sources */,
@@ -475,22 +457,6 @@
 				1B496C78163E1C0200A4FB80 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		1B496C89163E1C0200A4FB80 /* DCViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1B496C8A163E1C0200A4FB80 /* en */,
-			);
-			name = DCViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		1B496C8C163E1C0200A4FB80 /* DCViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1B496C8D163E1C0200A4FB80 /* en */,
-			);
-			name = DCViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

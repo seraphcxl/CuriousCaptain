@@ -35,7 +35,7 @@
     CGFloat x = [dot location].x;
     CGFloat y = [dot location].y;
     CGFloat frameSize = [dot size];
-    CGRect frame = CGRectMake(x - frameSize / 2.0, y - frameSize / 2.0 frameSize, frameSize);
+    CGRect frame = CGRectMake(x - frameSize / 2.0, y - frameSize / 2.0, frameSize, frameSize);
     
     CGContextSetFillColorWithColor (_context, [[dot color] CGColor]);
     CGContextFillEllipseInRect(_context, frame);

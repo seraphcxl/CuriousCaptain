@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DCScribbleThumbnailCell.h"
+#import "DCScribbleManager.h"
+#import "DCCommandBarButton.h"
 
-@interface DCThumbnailViewCtrl : UIViewController
+@interface DCThumbnailViewCtrl : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (retain, nonatomic) IBOutlet UINavigationItem *titleItem;
 
 @end

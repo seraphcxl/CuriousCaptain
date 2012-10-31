@@ -7,6 +7,8 @@
 //
 
 #import "DCPrototypeCtrl.h"
+#import "DCMark.h"
+#import "DCCanvasView.h"
 
 @interface DCPrototypeCtrl ()
 
@@ -27,6 +29,26 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    do {
+        id<DCMark> selectedMark = nil;
+        NSMutableArray *templateArray = [[[NSMutableArray alloc] initWithCapacity:1] autorelease];
+        id<DCMark> patternTemplate = [selectedMark copy];
+        
+        // save the patternTemplate in
+        // a data structure so it can be
+        // used later
+        [templateArray addObject:patternTemplate];
+        
+        DCCanvasView *canvasView = nil;
+        id<DCMark> currentMark = nil;
+        int patternIndex = -1;
+        
+        id<DCMark> patternClone = [templateArray objectAtIndex:patternIndex];
+        [currentMark addMark:patternClone];
+        canvasView.mark = currentMark;
+        [canvasView setNeedsDisplay];
+    } while (NO);
 }
 
 - (void)didReceiveMemoryWarning

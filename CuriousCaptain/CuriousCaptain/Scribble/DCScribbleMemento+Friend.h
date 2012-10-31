@@ -7,7 +7,13 @@
 //
 
 #import "DCScribbleMemento.h"
+#import "DCMark.h"
 
-@interface DCScribbleMemento (Friend)
+@interface DCScribbleMemento ()
+
+@property (nonatomic, copy) id<DCMark> mark;
+@property (nonatomic, assign) BOOL hasCompleteSnapshot;
+
+- (id)initWithMark:(id<DCMark>)aMark;
 
 @end

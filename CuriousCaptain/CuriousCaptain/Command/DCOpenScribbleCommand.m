@@ -33,7 +33,7 @@
         DCScribble *scribble = [self.scribbleSrc scribble];
         
         DCCoordinatingCtrl *coordinatorCtrl = [DCCoordinatingCtrl sharedInstance];
-        DCCanvasViewCtrl *canvasViewCtrl = [coordinatorCtrl canvasViewController];
+        DCCanvasViewCtrl *canvasViewCtrl = [coordinatorCtrl canvasViewCtrl];
         canvasViewCtrl.scribble = scribble;
         
         [coordinatorCtrl requestViewChangeByObject:self];

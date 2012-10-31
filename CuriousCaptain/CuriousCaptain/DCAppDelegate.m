@@ -8,7 +8,7 @@
 
 #import "DCAppDelegate.h"
 
-#import "DCViewController.h"
+//#import "DCViewController.h"
 
 @implementation DCAppDelegate
 
@@ -23,12 +23,12 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.viewController = [[[DCViewController alloc] initWithNibName:@"DCViewController_iPhone" bundle:nil] autorelease];
-    } else {
-        self.viewController = [[[DCViewController alloc] initWithNibName:@"DCViewController_iPad" bundle:nil] autorelease];
-    }
-    self.window.rootViewController = self.viewController;
+//    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+//        self.viewController = [[[DCViewController alloc] initWithNibName:@"DCViewController_iPhone" bundle:nil] autorelease];
+//    } else {
+//        self.viewController = [[[DCViewController alloc] initWithNibName:@"DCViewController_iPad" bundle:nil] autorelease];
+//    }
+//    self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -26,7 +26,7 @@
         [self.delegate command:self didRequestForStrokeSize:&strokeSize];
         
         DCCoordinatingCtrl *coordinatingCtrl = [DCCoordinatingCtrl sharedInstance];
-        DCCanvasViewCtrl *canvasViewCtrl = [coordinatingCtrl canvasViewController];
+        DCCanvasViewCtrl *canvasViewCtrl = [coordinatingCtrl canvasViewCtrl];
         
         canvasViewCtrl.strokeSize = strokeSize;
     } while (NO);

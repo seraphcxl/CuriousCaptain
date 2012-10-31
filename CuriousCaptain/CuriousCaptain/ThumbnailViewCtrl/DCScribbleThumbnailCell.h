@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DCScribbleThumbnailView.h"
 
 @interface DCScribbleThumbnailCell : UITableViewCell
+
++ (NSInteger)numberOfPlaceHolders;
+- (void)addThumbnailView:(UIView *)thumbnailView atIndex:(NSInteger)index;
 
 @end
