@@ -114,10 +114,12 @@
 
 #pragma mark Loading a CanvasView from a CanvasViewGenerator
 
-- (void)loadCanvasViewWithGenerator:(DCCanvasViewGenerator *)generator
-{
+- (void)loadCanvasViewWithGenerator:(DCCanvasViewGenerator *)generator {
     [self.canvasView removeFromSuperview];
-    CGRect aFrame = CGRectMake(0, 0, 320, 460);
+    CGRect aFrame = self.view.frame;
+    aFrame.origin.y += (44 + 20);
+    aFrame.size.height -= (44 * 2 + 20);
+//    CGRect aFrame = CGRectMake(0, 0, 320, 460);
     DCCanvasView *aCanvasView = [generator canvasViewWithFrame:aFrame];
     self.canvasView = aCanvasView;
     NSInteger viewIndex = [[[self view] subviews] count] - 1;
@@ -130,8 +132,7 @@
     _startPoint = [[touches anyObject] locationInView:self.canvasView];
 }
 
-- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
-{
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
     CGPoint lastPoint = [[touches anyObject] previousLocationInView:self.canvasView];
     
     // add a new stroke to scribble
@@ -251,8 +252,7 @@
     [invocation invoke];
 }
 
-- (void) unexecuteInvocation:(NSInvocation *)invocation withRedoInvocation:(NSInvocation *)redoInvocation
-{
+- (void) unexecuteInvocation:(NSInvocation *)invocation withRedoInvocation:(NSInvocation *)redoInvocation {
     [[self.undoManager prepareWithInvocationTarget:self] executeInvocation:redoInvocation withUndoInvocation:invocation];
     
     [invocation invoke];
