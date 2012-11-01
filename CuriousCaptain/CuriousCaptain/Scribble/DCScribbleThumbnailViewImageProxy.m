@@ -49,7 +49,7 @@
 */
 
 - (DCScribble *)scribble {
-    if (self.scribble == nil) {
+    if (_scribble == nil) {
         NSFileManager *fileManager = [NSFileManager defaultManager];
         NSData *scribbleData = [fileManager contentsAtPath:self.scribblePath];
         DCScribbleMemento *scribbleMemento = [DCScribbleMemento mementoWithData:scribbleData];
@@ -122,7 +122,7 @@
 #pragma mark A private method for loading a real image in a thread
 
 - (void)forwardImageLoadingThread {
-    NSAutoreleasePool *pool = [[[NSAutoreleasePool alloc] init] autorelease];
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
     
     // forward the message to load
     // the real image payload

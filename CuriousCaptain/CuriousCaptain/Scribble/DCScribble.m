@@ -11,7 +11,6 @@
 #import "DCStroke.h"
 
 @interface DCScribble () {
-    id<DCMark> _parentMark;
     id<DCMark> _incrementalMark;
 }
 
@@ -27,7 +26,7 @@
     if (self = [super init]) {
         // the parent should be a composite
         // object (i.e. Stroke)
-        _parentMark = [[DCStroke alloc] init];
+        _mark = [[DCStroke alloc] init];
     }
     
     return self;
@@ -35,7 +34,7 @@
 
 - (void)dealloc {
     [_incrementalMark release];
-    [_parentMark release];
+    [_mark release];
     [super dealloc];
 }
 
@@ -53,9 +52,9 @@
     // to be the last child of the main
     // parent
     if (shouldAddToPreviousMark) {
-        [[_parentMark lastChild] addMark:aMark];
+        [[self.mark lastChild] addMark:aMark];
     } else { // otherwise attach it to the parent
-        [_parentMark addMark:aMark];
+        [self.mark addMark:aMark];
         _incrementalMark = [aMark retain];
     }
     
@@ -65,14 +64,14 @@
 
 - (void)removeMark:(id<DCMark>)aMark {
     // do nothing if aMark is the parent
-    if (aMark == _parentMark) {
+    if (aMark == self.mark) {
         return;
     }
     
     // manual KVO invocation
     [self willChangeValueForKey:@"mark"];
     
-    [_parentMark removeMark:aMark];
+    [self.mark removeMark:aMark];
     
     // we don't need to keep the
     // incrementalMark_ reference
@@ -97,7 +96,7 @@
             // incremental mark, then we need to
             // create a parent Stroke object to
             // hold it
-            _parentMark = [[DCStroke alloc] init];
+            _mark = [[DCStroke alloc] init];
             [self attachStateFromMemento:aMemento];
         }
     }
@@ -120,7 +119,7 @@
     // for a complete snapshot, then
     // set it with parentMark_
     if (hasCompleteSnapshot) {
-        mementoMark = _parentMark;
+        mementoMark = self.mark;
     } else if (mementoMark == nil) { // but if _incrementalMark is nil then we can't do anything but bail out
         return nil;
     }

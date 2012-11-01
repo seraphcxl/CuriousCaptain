@@ -35,8 +35,7 @@ static DCCoordinatingCtrl *sharedCoordinator = nil;
                 DCPaletteViewCtrl *paletteViewCtrl = [[[DCPaletteViewCtrl alloc] init] autorelease];
                 
                 // transition to the PaletteViewController
-                [self.canvasViewCtrl presentModalViewController:paletteViewCtrl
-                                                         animated:YES];
+                [self.canvasViewCtrl presentModalViewController:paletteViewCtrl animated:YES];
                 
                 // set the activeViewController to
                 // paletteViewController
@@ -51,8 +50,7 @@ static DCCoordinatingCtrl *sharedCoordinator = nil;
                 
                 
                 // transition to the ThumbnailViewController
-                [self.canvasViewCtrl presentModalViewController:thumbnailViewCtrl
-                                                         animated:YES];
+                [self.canvasViewCtrl presentModalViewController:thumbnailViewCtrl animated:YES];
                 
                 // set the activeViewController to
                 // ThumbnailViewController

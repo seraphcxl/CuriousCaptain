@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class DCViewController;
+@class DCCoordinatingCtrl;
 
 @interface DCAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) DCViewController *viewController;
+//@property (strong, nonatomic) DCCoordinatingCtrl *viewController;
 
 @end

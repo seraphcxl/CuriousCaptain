@@ -13,6 +13,12 @@
 
 @synthesize mark = _mark;
 
+- (void)setMark:(id<DCMark>)mark {
+    [mark retain];
+    [_mark release];
+    _mark = mark;
+}
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -38,7 +44,9 @@
     DCMarkRenderer *markRenderer = [[[DCMarkRenderer alloc] initWithCGContext:context] autorelease];
     
     // pass this renderer along the mark composite structure
-    [self.mark acceptMarkVisitor:markRenderer];
+    if (_mark != nil) {
+        [_mark acceptMarkVisitor:markRenderer];
+    }
     
 }
 

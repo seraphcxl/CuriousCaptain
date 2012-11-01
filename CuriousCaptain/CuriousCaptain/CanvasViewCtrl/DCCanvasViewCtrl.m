@@ -90,9 +90,9 @@
     // enforce the smallest size
     // allowed
     if (aSize < 5.0) {
-        self.strokeSize = 5.0;
+        _strokeSize = 5.0;
     } else {
-        self.strokeSize = aSize;
+        _strokeSize = aSize;
     }
 }
 
@@ -117,7 +117,7 @@
 - (void)loadCanvasViewWithGenerator:(DCCanvasViewGenerator *)generator
 {
     [self.canvasView removeFromSuperview];
-    CGRect aFrame = CGRectMake(0, 0, 320, 436);
+    CGRect aFrame = CGRectMake(0, 0, 320, 460);
     DCCanvasView *aCanvasView = [generator canvasViewWithFrame:aFrame];
     self.canvasView = aCanvasView;
     NSInteger viewIndex = [[[self view] subviews] count] - 1;
